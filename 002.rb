@@ -10,9 +10,9 @@ previous = 1
 current = 2
 
 while (previous <= 4_000_000) do
-	previous, current = current, previous
-	current += previous
-	sum += previous if previous.even?
+    previous, current = current, previous
+    current += previous
+    sum += previous if previous.even?
 end
 
 puts sum

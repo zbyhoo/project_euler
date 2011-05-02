@@ -5,7 +5,7 @@
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
 def number_ok(number)
-	return (number % 3 == 0 or number % 5 == 0)
+    return (number % 3 == 0 or number % 5 == 0)
 end
 
 puts (1...1000).inject(0) { |total, number| number_ok(number) ? total + number : total }
